@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Resource Finder</title>
+    <meta name="description" content="Find academic, support, food, and facility resources across campus in one place.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand-wrap">
+            <div class="brand-mark">C</div>
+            <div>
+                <p class="eyebrow">Student Portal</p>
+                <h1>Campus Resource Finder</h1>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#discover">Discover</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-copy">
+                <p class="tag">Your campus, simplified</p>
+                <h2>Find the places and services you need in minutes.</h2>
+                <p class="subtitle">From study spaces and food courts to wellness services and student support,
+                    everything is just a click away.</p>
+
+                <div class="search-panel" aria-label="Resource search">
+                    <label class="search-field">
+                        <span>Search resources</span>
+                        <input id="searchInput" type="text" placeholder="Try library, health, lab..."
+                            aria-label="Search resources">
+                    </label>
+                    <label class="filter-field">
+                        <span>Category</span>
+                        <select id="categoryFilter" aria-label="Filter by category">
+                            <option value="all">All categories</option>
+                            <option value="study">Study</option>
+                            <option value="tech">Tech</option>
+                            <option value="wellness">Wellness</option>
+                            <option value="food">Food</option>
+                            <option value="support">Support</option>
+                            <option value="facilities">Facilities</option>
+                            <option value="transport">Transport</option>
+                            <option value="housing">Housing</option>
+                            <option value="events">Events</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="mini-stat">
+                    <strong>18+</strong>
+                    <span>Campus locations</span>
+                </div>
+                <div class="mini-stat">
+                    <strong>24/7</strong>
+                    <span>Access support</span>
+                </div>
+                <div class="mini-stat accent">
+                    <strong>Fast</strong>
+                    <span>Find resources instantly</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-bar" aria-label="Campus overview">
+            <div>
+                <strong>8,500+</strong>
+                <span>Students served</span>
+            </div>
+            <div>
+                <strong>35</strong>
+                <span>Study spaces</span>
+            </div>
+            <div>
+                <strong>12</strong>
+                <span>Support desks</span>
+            </div>
+            <div>
+                <strong>7 min</strong>
+                <span>Average travel time</span>
+            </div>
+        </section>
+
+        <section id="discover" class="resources-section">
+            <div class="section-heading">
+                <p class="tag muted">Explore</p>
+                <h3>Popular campus resources</h3>
+            </div>
+
+            <div class="chip-row" aria-label="Resource categories">
+                <button class="chip active" data-filter="all" type="button">All</button>
+                <button class="chip" data-filter="study" type="button">Study</button>
+                <button class="chip" data-filter="tech" type="button">Tech</button>
+                <button class="chip" data-filter="wellness" type="button">Wellness</button>
+                <button class="chip" data-filter="food" type="button">Food</button>
+                <button class="chip" data-filter="support" type="button">Support</button>
+                <button class="chip" data-filter="facilities" type="button">Facilities</button>
+                <button class="chip" data-filter="transport" type="button">Transport</button>
+                <button class="chip" data-filter="housing" type="button">Housing</button>
+                <button class="chip" data-filter="events" type="button">Events</button>
+            </div>
+
+            <div class="resource-grid" id="resourceGrid"></div>
+        </section>
+
+        <section id="services" class="service-banner">
+            <div class="section-heading left">
+                <p class="tag muted">Need help?</p>
+                <h3>Quick campus support</h3>
+            </div>
+
+            <div class="service-list">
+                <div>
+                    <strong>IT Help Desk</strong>
+                    <span>Device support and network issues</span>
+                </div>
+                <div>
+                    <strong>Transport Desk</strong>
+                    <span>Shuttle routes and parking guidance</span>
+                </div>
+                <div>
+                    <strong>Security Office</strong>
+                    <span>Access control and emergency support</span>
+                </div>
+                <div>
+                    <strong>Admissions Support</strong>
+                    <span>Enrollment, scholarships, and form help</span>
+                </div>
+                <div>
+                    <strong>Career Center</strong>
+                    <span>Internships, resume reviews, and job advising</span>
+                </div>
+                <div>
+                    <strong>Campus Events</strong>
+                    <span>Festivals, workshops, and student activities</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="section-heading">
+                <p class="tag muted">About</p>
+                <h3>Built for easier campus life</h3>
+            </div>
+            <p>This campus directory helps students quickly locate the services, facilities, and support they need every
+                day. Whether you are looking for a quiet study space, medical care, or a place to eat, the finder brings
+                the most important resources together in one convenient place.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Campus Resource Finder</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
